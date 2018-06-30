@@ -1,0 +1,80 @@
+
+html, body{
+    height:100% ;
+}
+
+.head{
+    height: 80px;
+    background: rgb(124, 255, 112);
+}
+.content{
+    /* position: relative; */
+    float: left;
+    /* display: flex; */
+    /* height:calc(100% - 80px); */
+    width: 100%;
+    
+    height: 100%;
+    min-height: calc(100% - 80px);
+    background: rgb(205, 40, 255);
+    overflow:hidden 
+}
+.left{
+    
+    /* position: absolute; */
+    /* top:0;
+    left:0px; */
+    float: left;
+    width: 200px;
+
+    min-height: 100%;
+    background: red;
+    overflow: hidden;
+}
+.right{
+
+    float: left;
+    width: calc(100% - 200px);
+
+    min-height: 100%;
+    background: yellow;
+    overflow: hidden;
+}
+
+.contentflex{
+    display: flex;
+    min-height: calc(100% - 80px);
+    background: rgb(205, 40, 255);
+}
+.leftflex{
+    /* display: flex; */
+    flex:0 0 200px;
+    background: red;
+    flex-direction: column;
+}
+.rightflex{
+    /* display: flex; */
+    flex:auto;
+    background: yellow;
+}
+
+
+.container-fluid{
+    min-height: calc(100% - 80px);
+    overflow: hidden;
+}
+.col-md-2{
+    background: red;
+    min-height: 100%;
+    /* overflow: hidden; */
+    margin-bottom:-9999px;
+    padding-bottom:9999px;
+}
+.col-md-10{
+    background: yellow;
+    /* height: 100%; */
+    min-height: 100%;
+    margin-bottom:-9999px;
+    padding-bottom:9999px;
+    /* overflow: hidden; */
+}

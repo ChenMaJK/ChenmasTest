@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    <style type="text/css">
+        .table{
+            border-collapse:collapse;
+        }
+         /* 表格格子为 */
+        .table th,table td{
+            border: solid #000000 2px;
+            min-width: 10px;
+            background: bisque;
+        }
+        /* 行高设置 */
+        .table tr{
+            height: 10px;
+        }
+        /* 第二列border及样式为透明 */
+        .table tr:first-child th:nth-child(2),
+        .table tr td:nth-child(2){
+            border: 0;
+            background: rgba(255, 255, 255, 0);
+        }
+    </style>
+</head>
+<body>
+        <dialog>
+            
+        </dialog>
+
+        <div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th colspan="2" rowspan="2" >
+                             单位名称
+                        </th>
+                        <th class="null"  rowspan="2" > </th>
+                        <th colspan="4">服务企业</th>
+                        <th colspan="4">服务学校</th>
+                    </tr>
+                    <tr>
+                        <th>企业总数</th>
+                        <th>接报总数</th>
+                        <th>已完成</th>
+                        <th>未完成</th>
+                        <th>学校总数</th>
+                        <th>接报总数</th>
+                        <th>已完成</th>
+                        <th>未完成</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        <tr>
+                        </tr>
+                        <tr>
+                            <td colspan="2" >九龙坡分局帅帅帅</td>
+                            <td  class="null" ></td>
+                            <td>123</td>
+                            <td>213</td>
+                            <td>456</td>
+                            <td>456</td>
+                            <td>123</td>
+                            <td>789</td>
+                            <td>546</td>
+                            <td>546</td>
+                        </tr>
+                    </tbody>
+            </table>
+        </div>
+</body>
+</html>
