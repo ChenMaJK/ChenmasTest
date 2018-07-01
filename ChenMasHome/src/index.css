@@ -1,0 +1,14 @@
+.test{
+
+}
+
+:global(body),:global(html){
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.test{
+    /* color: yellow; */
+    font-size: 30px;
+    background: red;
+}

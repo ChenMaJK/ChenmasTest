@@ -1,0 +1,34 @@
+{
+  "name": "chenmasHome",
+  "version": "1.0.0",
+  "description": "here is ChenMa's homePage!",
+  "main": "index.js",
+  "scripts": {
+    "test": "node dev-server --hot",
+    "s": "webpack-dev-server --content-base build --inline --hot",
+    "dev": "webpack-cli --config webpack.config.js"
+  },
+  "author": "chenma",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "bower-webpack-plugin": "^0.1.9",
+    "css-loader": "^0.28.11",
+    "open-browser-webpack-plugin": "0.0.5",
+    "postcss-loader": "^0.9.1",
+    "postcss-modules-values": "^1.1.3",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "style-loader": "^0.21.0",
+    "uglifyjs-webpack-plugin": "^1.2.7",
+    "webpack": "^4.12.0",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+    "gh-pages": "^0.11.0"
+  }
+}
