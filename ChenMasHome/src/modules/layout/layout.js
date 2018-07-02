@@ -3,19 +3,55 @@ import { render } from 'react-dom';
 
 import layout from './layout.css';
 
-export default class Header extends Component
+export class Header extends Component
 {
     constructor(props){
         super(props);
-        // this.handleClick2 = this.handleClick2.bind(this)
-    }
-    handleClick = () =>{
-        // e.preventDefault();
-        console.log("嘿嘿")
     }
     render(){
         return(
-            <div onClick={this.handleClick}>
+            <div className={layout.header}>
+                {this.props.children}
+            </div>
+        );
+    }
+}
+export class Content extends Component
+{
+    constructor(props){
+        super(props);
+    }
+    render(){
+        return(
+            <div className={ layout.content + " " + this.props.className}>
+                {this.props.children}
+            </div>
+        );
+    }
+}
+
+export class Left extends Component
+{
+    constructor(props){
+        super(props);
+    }
+    render(){
+        return(
+            <div className={layout.left+" "+this.props.className}>
+                {this.props.children}
+            </div>
+        );
+    }
+}
+export class Right extends Component
+{
+    constructor(props){
+        super(props);
+    }
+    render(){
+        return(
+            <div className={layout.right +" "+this.props.className}>
+                {this.props.children}
             </div>
         );
     }

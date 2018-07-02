@@ -1,14 +1,23 @@
-.test{
-
-}
-
-:global(body),:global(html){
+body, html ,.app{
     height: 100%;
     margin: 0;
     padding: 0;
-}
-.test{
-    /* color: yellow; */
     font-size: 30px;
-    background: red;
+}
+
+.left{
+    background: #c0c0c0
+}
+.right{
+    background: #f8f8f8
+}
+div>.content{
+    min-height: 100% ;
+}
+
+.title{
+    color: white;
+    float:  right;
+    margin-right: 10rem;
+    font-weight: 900;
 }

@@ -1,0 +1,39 @@
+.face{
+    box-sizing: border-box;
+    background: #353535;
+    color:white;
+    padding: 0.5rem 1rem;
+    user-select: none;
+    border-right: 1rem solid rgb(255, 153, 0);
+}
+.face:hover{
+    background: #8997ff;
+    border-right-color:  rgb(255, 104, 34);
+}
+.down{
+    padding-left:1rem;
+}
+.hidden{
+    display: none;
+    animation:hidden 5s infinite;
+}
+.show{
+    display: block;
+}
+@keyframes hidden
+{
+from {display:block;}
+to {display:none;}
+}
+
+
+.button{
+    padding: 0.5rem 1rem;
+    background: #eeeeee;
+    /* -moz-user-select: none;
+    -webkit-user-select: none; */
+    user-select: none;
+}
+.button:hover{
+    background: #8997ff;
+}
