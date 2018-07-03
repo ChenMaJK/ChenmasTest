@@ -13,19 +13,27 @@ render(
         </Header>
         <Content>
             <Left className={css.left}>
-                <Dorpdown>
+                <Dorpdown faceStr="D1">
                     <Button>1</Button>
                     <Button>2</Button>
                     <Button>3</Button>
                 </Dorpdown>
-                <Dorpdown>
+                <Dorpdown faceStr="D2">
                     <Button>2</Button>
                     <Button>3sss</Button>
-                    <Dorpdown>
+                    <Dorpdown faceStr="D21">
+                        <Button>2</Button>
+                        <Button>3</Button>
+                        <Button>2</Button>
+                        <Button>3</Button>
                         <Button>2</Button>
                         <Button>3</Button>
                     </Dorpdown>
                 </Dorpdown>
+                <Dorpdown faceStr="D3">
+                    <Button>1</Button>
+                </Dorpdown>
+                <Dorpdown faceStr="D4"/>
             </Left>
             <Right className={css.right}>
             </Right>   

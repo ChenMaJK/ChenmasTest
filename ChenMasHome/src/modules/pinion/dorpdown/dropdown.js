@@ -5,36 +5,48 @@ import css from './dropdown.css';
 
 export default class Dropdown extends Component
 {
-    clickNum = 1;
+    downHeight = 0;
     state={
-        display:"block"
+        display:css.show,
+        downHeight:"auto"
     }
+
     constructor(props){
         super(props);
     }
+    componentDidMount(){
+        this.downHeight = this.refs.down.offsetHeight;
+        this.setState({downHeight : this.downHeight})
+    }
     handleDisplay = (e)=>{
         e.preventDefault();
-        if(this.clickNum++%2){
+        if(this.state.display==css.show){
             this.setState({
-                display:"none"
+                display:css.hidden,
+                downHeight:0
             })
         }else{
             this.setState({
-                display:"block"
+                display:css.show,
+                downHeight:this.downHeight
             })
         }
     }
     render(){
         return(
-            <div className={css.dropdown}>
+            <div ref="dropdown" className={css.dropdown}>
                 <div 
                     className={css.face} 
                     onClick={this.handleDisplay} 
                     onSelectstart={()=>{return false}}
                 >
-                    dropdown
+                    {this.props.faceStr==undefined?"DorpDown":this.props.faceStr}
                 </div>
-                <div className={css.down} style={{display:this.state.display}}>
+                <div 
+                    ref = "down"
+                    className={css.down+" "+this.state.display} 
+                    style={{maxHeight:this.state.downHeight}}
+                >
                     {this.props.children}
                 </div>
             </div>
