@@ -17,7 +17,9 @@ div>.content{
 
 .title{
     color: white;
-    float:  right;
-    margin-right: 10rem;
+    /* float:  right; */
+    margin-right: 20%;
+    margin-left:17rem;
     font-weight: 900;
+    min-width: 17rem;
 }

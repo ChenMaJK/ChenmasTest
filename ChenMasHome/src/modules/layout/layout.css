@@ -5,7 +5,8 @@
     height: 2.5rem;
     line-height: 2.5rem;
     background: rgb(80, 80, 80);
-    overflow: hidden
+    overflow: hidden;
+    white-space: nowrap;
 }
 .content{
     box-sizing: border-box;

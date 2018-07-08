@@ -1,9 +1,10 @@
 import React,{Component} from  'react';
 import { render } from 'react-dom';
 //css
-import css from './dropdown.css';
+import css from './button.css';
 
-export default class Dropdown extends Component
+
+export class Dropdown extends Component
 {
     downHeight = 0;
     state={
@@ -54,14 +55,18 @@ export default class Dropdown extends Component
     }
 }
 
+
 export class Button extends Component
 {
     constructor(props){
         super(props);
     }
+    handleClick=()=>{
+        this.props.onClick()
+    }
     render(){
         return(
-            <div className={css.button}>
+            <div className={css.button} onClick={this.handleClick}>
                 {this.props.children}
             </div>
         )
